@@ -19,7 +19,9 @@ var chatID int64
 
 func init() {
     botToken = os.Getenv("bottoken")
-    chatID = os.Getenv("chatid")
+    chatIDStr := os.Getenv("chatid")
+    chatID, err := strconv.ParseInt(chatIDStr, 10, 64)
+
 }
 
 type alertmanagerAlert struct {
