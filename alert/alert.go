@@ -14,7 +14,7 @@ const (
 )
 
 var botToken string
-var chatID int
+var chatID int64
 
 
 type alertmanagerAlert struct {
