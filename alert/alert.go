@@ -21,7 +21,7 @@ var chatID int64
 func init() {
     botToken = os.Getenv("bottoken")
     chatIDStr := os.Getenv("chatid")
-    chatID, err := strconv.ParseInt(chatIDStr, 10, 64)
+    chatID, _ = strconv.ParseInt(chatIDStr, 10, 64)
 
 }
 
