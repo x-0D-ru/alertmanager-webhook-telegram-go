@@ -4,9 +4,16 @@ import (
 	"alertmanager-webhook-telegram-go/alert"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 )
+
+func init() {
+    botToken = os.Getenv("bottoken")
+    chatID = os.Getenv("chatid")
+}
+
 
 func main() {
 
