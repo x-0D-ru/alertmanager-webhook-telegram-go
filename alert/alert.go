@@ -16,6 +16,10 @@ const (
 var botToken string
 var chatID int64
 
+func init() {
+    botToken = os.Getenv("bottoken")
+    chatID = os.Getenv("chatid")
+}
 
 type alertmanagerAlert struct {
 	Receiver string `json:"receiver"`
