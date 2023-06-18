@@ -5,13 +5,14 @@ import (
 	"log"
 	"net/http"
 	"time"
+	"os"
 
 	botapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
 
 const (
-	botToken       = "xxbotTokenxx"
-	chatID         = 666777666
+	botToken       = os.Getenv("bottoken")
+	chatID         = os.Getenv("chatid")
 	timeDateFormat = "2006-01-02 15:04:05"
 )
 
