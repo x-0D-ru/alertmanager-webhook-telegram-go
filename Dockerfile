@@ -7,4 +7,4 @@ RUN unset GOPATH \
 FROM golang:1.13.10
 LABEL maintainer="Carlos Augusto Malucelli <camalucelli@gmail.com>"
 COPY --from=builder /go/main .
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT ["./main"]
