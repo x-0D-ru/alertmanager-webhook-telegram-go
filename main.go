@@ -9,12 +9,6 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func init() {
-    botToken = os.Getenv("bottoken")
-    chatID = os.Getenv("chatid")
-}
-
-
 func main() {
 
 	router := mux.NewRouter()
