@@ -5,7 +5,6 @@ import (
 	"log"
 	"net/http"
 	"time"
-	"os"
 
 	botapi "github.com/go-telegram-bot-api/telegram-bot-api"
 )
@@ -15,7 +14,7 @@ const (
 )
 
 var botToken string
-var chatID string
+var chatID int
 
 
 type alertmanagerAlert struct {
