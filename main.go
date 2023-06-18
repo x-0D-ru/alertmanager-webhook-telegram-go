@@ -4,7 +4,6 @@ import (
 	"alertmanager-webhook-telegram-go/alert"
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/gorilla/mux"
 )
