@@ -11,10 +11,12 @@ import (
 )
 
 const (
-	botToken       = os.Getenv("bottoken")
-	chatID         = os.Getenv("chatid")
 	timeDateFormat = "2006-01-02 15:04:05"
 )
+
+var botToken string
+var chatID string
+
 
 type alertmanagerAlert struct {
 	Receiver string `json:"receiver"`
