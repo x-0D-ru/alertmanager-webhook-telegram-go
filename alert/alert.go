@@ -16,7 +16,7 @@ const (
 )
 
 var botToken string
-var chatID int64
+var chatID int
 
 func init() {
     botToken = os.Getenv("bottoken")
