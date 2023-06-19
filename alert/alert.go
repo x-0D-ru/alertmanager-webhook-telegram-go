@@ -99,7 +99,7 @@ func ToTelegram(w http.ResponseWriter, r *http.Request) {
 		bot.Send(msg)
 	}
 
-	log.Println(alerts)
+	log.Println(int64(chatID), alerts)
 	json.NewEncoder(w).Encode(alerts)
 
 }
