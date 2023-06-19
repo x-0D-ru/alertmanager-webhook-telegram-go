@@ -95,11 +95,11 @@ func ToTelegram(w http.ResponseWriter, r *http.Request) {
 			telegramMsg += "Started: " + alert.StartsAt.Format(timeDateFormat)
 		}
 
-		msg := botapi.NewMessage(-int64(chatID), telegramMsg)
+		msg := botapi.NewMessage(int64(chatID), telegramMsg)
 		bot.Send(msg)
 	}
 
-	log.Println(int64(chatID), alerts)
+	log.Println(alerts)
 	json.NewEncoder(w).Encode(alerts)
 
 }
