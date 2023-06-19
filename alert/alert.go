@@ -22,7 +22,7 @@ func init() {
     botToken = os.Getenv("bottoken")
     chatIDStr := os.Getenv("chatid")
     chatID, _ = strconv.ParseInt(chatIDStr, 10, 64)
-
+	log.Println("sending to chat: " + chatID)
 }
 
 type alertmanagerAlert struct {
